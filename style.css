@@ -1,0 +1,35 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: beige;
+}
+
+.tetris-container {
+    text-align: center;
+}
+
+.game-board {
+    display: grid;
+    grid-template-columns: repeat(10, 30px); /* Ajusta el tamaño del tablero según tus necesidades */
+    grid-template-rows: repeat(20, 30px); /* Ajusta el tamaño del tablero según tus necesidades */
+    gap: 1px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+}
+
+.game-board div {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    border: 1px solid #eee;
+}
+
+.score {
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+/* Agrega estilos específicos según las necesidades del juego, por ejemplo, para las piezas del Tetris */
