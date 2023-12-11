@@ -3,15 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tetris</title>
+    <title>Game</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://code.jquery.com/jquery-3.7.1.slim.js"></script>
     <script src="script.js"></script>
 </head>
 <body>
-    <div class="tetris-container">
-        <div class="game-board"></div>
-        <div class="score">Score: <span id="score">0</span></div>
+    <div class="main-container">
+        <div class="game-board">
+            <div class="character player" style="bottom: 20px; left: 20px;"></div>
+            <div class="character enemy" style="top: 20px; right: 20px;"></div>
+        </div>
+        <div class="options-board">
+            <button class="option-btn" onclick="luchar()">Luchar</button>
+            <button class="option-btn" onclick="curarse()">Curarse</button>
+            <button class="option-btn" onclick="defenderse()">Defenderse</button>
+            <button class="option-btn" onclick="huir()">Huir</button>
+        </div>
     </div>
 </body>
 </html>

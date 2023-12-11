@@ -1,2 +1,3 @@
-# TetrisJS
-Voy a intentar recrear el juego Tetris en JS, para intentar mejorar un poco
+# JuegoJS
+
+Voy a intentar recrear un juego de combate por turnos.
