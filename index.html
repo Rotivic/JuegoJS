@@ -11,8 +11,14 @@
 <body>
     <div class="main-container">
         <div class="game-board">
-            <div class="character player" style="bottom: 20px; left: 20px;"></div>
-            <div class="character enemy" style="top: 20px; right: 20px;"></div>
+            <div class="personaje player">
+                <img src="./img/Mercenario.png" alt="Jugador">
+                <div class="barra-vida" id="barraVidaJugador"></div>
+            </div>
+            <div class="personaje enemy">
+                <img src="./img/Ladron.png" alt="Enemigo">
+                <div class="barra-vida" id="barraVidaEnemigo"></div>
+            </div>
         </div>
         <div class="options-board">
             <button class="option-btn dmg" >Luchar</button>

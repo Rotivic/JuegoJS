@@ -28,19 +28,50 @@ body {
 }
 
 /* Estilos para los personajes */
-.character {
-    width: 100px;
-    height: 100px;
+.personaje {
     position: absolute;
 }
 
 .player {
-    background-color: green;
+    left: 100px;
+    bottom: 40px;
 }
 
 .enemy {
-    background-color: red;
+    right: 100px;
+    top: 40px;
 }
+
+.personaje img {
+    width: 100px; /* Ajusta el tamaño según tus necesidades */
+    height: 100px; /* Ajusta el tamaño según tus necesidades */
+}
+
+.barra-vida {
+    width: 10px; /* Ajusta la anchura de la barra según tus necesidades */
+    height: 100%;
+    background-color: green; /* Color de fondo de la barra de vida */
+    position: absolute;
+}
+
+/* Ajustes específicos para el jugador */
+.player .barra-vida {
+    background-color: green; /* Color de fondo de la barra de vida del jugador */
+    height: 10px; /* Ajusta la altura de la barra según tus necesidades */
+    width: 100%; /* Ajusta la anchura de la barra según tus necesidades */
+    bottom: -15px; /* Posiciona la barra de vida debajo del jugador */
+    left: 0;
+}
+
+/* Ajustes específicos para el enemigo */
+.enemy .barra-vida {
+    background-color: red; /* Color de fondo de la barra de vida del enemigo */
+    height: 10px; /* Ajusta la altura de la barra según tus necesidades */
+    width: 100%; /* Ajusta la anchura de la barra según tus necesidades */
+    bottom: -15px; /* Posiciona la barra de vida debajo del enemigo */
+    right: 0;
+}
+
 
 /* Estilos para las opciones */
 .options-board {
